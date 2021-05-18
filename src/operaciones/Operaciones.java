@@ -40,7 +40,7 @@ public class Operaciones {
         if(a>b){
             return a;
         }else{
-            return a;
+            return b;
         }
     }
    /**

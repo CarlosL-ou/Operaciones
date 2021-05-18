@@ -53,6 +53,7 @@ public class OperacionesTest {
         int expResult = 8;        
         assertEquals(expResult, resultado);      
     }
+    @Ignore
     @Test
     public void testSumarImpar() {
         System.out.println("sumarImpar");
@@ -65,6 +66,7 @@ public class OperacionesTest {
         int expResult = 8;        
         assertEquals(expResult, resultado);      
     }
+    @Ignore
     @Test
     public void testSumarImparNeg() {
         System.out.println("sumarImpar");
@@ -76,7 +78,8 @@ public class OperacionesTest {
         
         int expResult = -6;        
         assertEquals(expResult, resultado);      
-    }    
+    } 
+    @Ignore
     @Test
     public void testSumarParNeg() {
         System.out.println("sumarImpar");
@@ -104,8 +107,46 @@ public class OperacionesTest {
         
         int expResult = 3;        
         assertEquals(expResult, result);                       
+    } 
+    @Ignore
+    @Test
+    public void testMayorNeg() {
+        System.out.println("mayor");
+        Operaciones instance = new Operaciones();
+        
+        int a = -3;
+        int b = -1;
+        int result = instance.mayor(a, b);
+        
+        int expResult = -1;        
+        assertEquals(expResult, result);                       
+    } 
+    @Ignore
+    @Test
+    public void testIgual() {
+        System.out.println("mayor");
+        Operaciones instance = new Operaciones();
+        
+        int a = 3;
+        int b = 3;
+        int result = instance.mayor(a, b);
+        
+        int expResult = 3;        
+        assertEquals(expResult, result);                       
+    } 
+    @Ignore
+    @Test
+    public void testIgualNeg() {
+        System.out.println("mayor");
+        Operaciones instance = new Operaciones();
+        
+        int a = -3;
+        int b = -3;
+        int result = instance.mayor(a, b);
+        
+        int expResult = -3;        
+        assertEquals(expResult, result);                       
     }
-
     /**
      * Test of sumarVector method, of class Operaciones.
      */
